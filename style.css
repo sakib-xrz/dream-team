@@ -1,32 +1,28 @@
-li::marker{
-    color: #B4F500;
-    font-weight: 600;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+li::marker {
+  color: #b4f500;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
-@media only screen and (max-width: 767px){
-    .banner-img{
-        background-color: #000;
-        opacity: 1
-    }
-    header p{
-        display: none;
-    }
+@media only screen and (max-width: 767px) {
+  .banner-img {
+    background-color: #000;
+    opacity: 1;
+  }
+  header p {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
-    footer{
-        margin-top: 32rem;
-    }
+  footer {
+    margin-top: 32rem;
+  }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1279px){
-    .order-list li{
-        font-size: 1rem !important;
-    }
-
-    .calculation h3 {
-        font-size: 1rem;
-    }
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .calculation h3 {
+    font-size: 1rem;
+  }
 }

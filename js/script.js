@@ -28,7 +28,7 @@ document
     const perPlayerCost = getInputValueById("per-player-cost");
     const container = document.getElementById("order-list-container");
     const totalPlayer = container.children.length;
-    
+
     if (totalPlayer <= 0) {
       alert("Please select at-least one player.");
     } else if (perPlayerCost <= 0 || isNaN(perPlayerCost)) {
@@ -38,7 +38,7 @@ document
       const playerExpenses = document.getElementById("player-expenses");
       playerExpenses.innerText = TotalPlayerCost;
     }
-    perPlayerCost.value = "";  
+    perPlayerCost.value = "";
   });
 
 // calculation for total cost
