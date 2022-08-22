@@ -59,7 +59,7 @@
             <div class="mx-auto">
               <button
                 style="background-color: #B4F500"
-                class="btn text-black btn-primary rounded w-48 border-0 text-2xl font-normal mb-10"
+                class="btn text-black btn-primary rounded w-48 border-0 text-2xl font-normal mb-10 select-btn"
               >
                 SELECT
               </button>
@@ -80,7 +80,7 @@
             <div class="mx-auto">
               <button
                 style="background-color: #B4F500"
-                class="btn text-black btn-primary rounded w-48 border-0 text-2xl font-normal mb-10"
+                class="btn text-black btn-primary rounded w-48 border-0 text-2xl font-normal mb-10 select-btn"
               >
                 SELECT
               </button>
@@ -101,7 +101,7 @@
             <div class="mx-auto">
               <button
                 style="background-color: #B4F500"
-                class="btn text-black btn-primary rounded w-48 border-0 text-2xl font-normal mb-10"
+                class="btn text-black btn-primary rounded w-48 border-0 text-2xl font-normal mb-10 select-btn"
               >
                 SELECT
               </button>
@@ -122,7 +122,7 @@
             <div class="mx-auto">
               <button
                 style="background-color: #B4F500"
-                class="btn text-black btn-primary rounded w-48 border-0 text-2xl font-normal mb-10"
+                class="btn text-black btn-primary rounded w-48 border-0 text-2xl font-normal mb-10 select-btn"
               >
                 SELECT
               </button>
@@ -143,7 +143,7 @@
             <div class="mx-auto">
               <button
                 style="background-color: #B4F500"
-                class="btn text-black btn-primary rounded w-48 border-0 text-2xl font-normal mb-10"
+                class="btn text-black btn-primary rounded w-48 border-0 text-2xl font-normal mb-10 select-btn"
               >
                 SELECT
               </button>
@@ -164,7 +164,7 @@
             <div class="mx-auto">
               <button
                 style="background-color: #B4F500"
-                class="btn text-black btn-primary rounded w-48 border-0 text-2xl font-normal mb-10"
+                class="btn text-black btn-primary rounded w-48 border-0 text-2xl font-normal mb-10 select-btn"
               >
                 SELECT
               </button>
@@ -185,7 +185,7 @@
             <div class="mx-auto">
               <button
                 style="background-color: #B4F500"
-                class="btn text-black btn-primary rounded w-48 border-0 text-2xl font-normal mb-10"
+                class="btn text-black btn-primary rounded w-48 border-0 text-2xl font-normal mb-10 select-btn"
               >
                 SELECT
               </button>
@@ -206,7 +206,7 @@
             <div class="mx-auto">
               <button
                 style="background-color: #B4F500"
-                class="btn text-black btn-primary rounded w-48 border-0 text-2xl font-normal mb-10"
+                class="btn text-black btn-primary rounded w-48 border-0 text-2xl font-normal mb-10 select-btn"
               >
                 SELECT
               </button>
@@ -229,13 +229,12 @@
             <div class="mx-auto">
               <button
                 style="background-color: #B4F500"
-                class="btn text-black btn-primary rounded w-48 border-0 text-2xl font-normal mb-10"
+                class="btn text-black btn-primary rounded w-48 border-0 text-2xl font-normal mb-10 select-btn"
               >
                 SELECT
               </button>
             </div>
           </div>
-
         </div>
         <!-- card end  -->
 
@@ -248,15 +247,13 @@
             >
               Selected - V
             </h2>
-            <div class="flex justify-center">
-              <ol class="list-decimal list-inside p-4">
-                <li style="color: #B4F500;" class="text-xl font-semibold p-2">David de Gea</li>
+              <ol id="order-list-container" class="list-decimal py-4 pl-4 flex flex-col justify-center order-list">
+                <!-- <li style="color: #B4F500;" class="text-xl font-semibold p-2">David de Gea</li>
                 <li style="color: #B4F500;" class="text-xl font-semibold p-2">Vítor Machado</li>
                 <li style="color: #B4F500;" class="text-xl font-semibold p-2">Thibaut Courtois</li>
                 <li style="color: #B4F500;" class="text-xl font-semibold p-2">Lionel Messi</li>
-                <li style="color: #B4F500;" class="text-xl font-semibold p-2">Mohamed Salah</li>
+                <li style="color: #B4F500;" class="text-xl font-semibold p-2">Mohamed Salah</li> -->
               </ol>
-            </div>
           </div>
           <div style="height:34rem;" class="p-10 card rounded bg-base-300 shadow-xl calculation">
             <h2
@@ -269,6 +266,7 @@
             <div class="flex items-center justify-between">
               <h3 style="color: #B4F500" class="w-5/12 text-lg">Per Player</h3>
               <input
+                id="per-player-cost"
                 style="border-color: #B4F500"
                 type="number"
                 placeholder="PLAYER COST"
@@ -278,6 +276,7 @@
 
             <div class="mx-auto w-full lg:w-full md:w-1/3">
               <button
+                id="calculate-player-cost"
                 style="background-color: #B4F500"
                 class="btn btn-s btn-primary rounded border-0 font-semibold my-4 text-black w-full"
               >
@@ -287,12 +286,13 @@
 
             <div class="flex items-center">
               <h3 style="color: #B4F500" class="w-8/12 text-lg">Player Expenses</h3>
-              <h3 class="w-4/12 text-lg text-white text-right">$ <span>00</span></h3>
+              <h3 class="w-4/12 text-lg text-white text-right">$ <span id="player-expenses">00</span></h3>
             </div>
 
             <div class="flex items-center justify-between mt-4">
               <h3 style="color: #B4F500" class="w-5/12 text-lg">Manager</h3>
               <input
+                id="manager-cost"
                 style="border-color: #B4F500"
                 type="number"
                 placeholder=""
@@ -303,6 +303,7 @@
             <div class="flex items-center justify-between mt-4">
               <h3 style="color: #B4F500" class="w-5/12 text-lg">Coach</h3>
               <input
+                id="coach-cost"
                 style="border-color: #B4F500"
                 type="number"
                 placeholder=""
@@ -312,6 +313,7 @@
 
             <div class="mx-auto w-full lg:w-full md:w-1/3">
               <button
+                id="calculate-total-cost"
                 style="background-color: #B4F500"
                 class="btn btn-primary rounded border-0 font-semibold my-4 text-black w-full"
               >
@@ -321,7 +323,7 @@
 
             <div class="flex items-center">
               <h3 style="color: #B4F500" class="w-8/12 text-lg">Total</h3>
-              <h3 class="w-4/12 text-lg text-white text-right">$ <span>00</span></h3>
+              <h3 class="w-4/12 text-lg text-white text-right">$ <span id="total">00</span></h3>
             </div>
           </div>
         </div>
@@ -336,5 +338,8 @@
         <p>Copyright © 2022 - All right reserved <span style="color: #B4F500">Md Sakibul Islam</span></p>
       </div>
     </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
